@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Basic page metadata and responsive layout settings-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!--Dashboard page title-->
+  <title>Network Security Monitoring • Dashboard</title>
+
+  <!--Google font used for dashboard styling-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--Main shared stylesheet-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+</head>
+
+<body>
+  <div class="app">
+    <!--Sidebar navigation and control panel-->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">🛡️</div>
+        <div class="brand-text">
+          <div class="brand-title">Network Security Monitoring</div>
+          <div class="brand-subtitle">
+            Datacenter Log Analysis
+          </div>
+        </div>
+      </div>
+
+      <!--Navigation links to dashboard and per-log views-->
+      <nav class="side-nav">
+        <a class="side-link active" href="/"><span class="side-ico">🏠</span><span>Dashboard</span></a>
+        <a class="side-link" href="/firewall"><span class="side-ico">🔥</span><span>Firewall Alerts</span></a>
+        <a class="side-link" href="/auth"><span class="side-ico">🔑</span><span>Auth Alerts</span></a>
+        <a class="side-link" href="/ids"><span class="side-ico">🕵️</span><span>IDS Alerts</span></a>
+        <a class="side-link" href="/dns"><span class="side-ico">🌐</span><span>DNS Alerts</span></a>
+      </nav>
+
+      <!--Controls for generating data, running analysis, and uploading logs-->
+      <div class="side-actions">
+        <select id="generator-select" class="select"></select>
+        <button class="btn btn-success" id="btn-generate" type="button">Generate Test Data</button>
+        <button class="btn btn-primary" id="btn-run" type="button">Run Analysis</button>
+
+        <div class="upload-block">
+          <div class="upload-title">Upload CSV Logs</div>
+
+          <!--Per-source CSV upload controls-->
+          <label class="upload-row">
+            <span>Firewall</span>
+            <input type="file" id="upload-firewall" accept=".csv">
+          </label>
+
+          <label class="upload-row">
+            <span>Auth</span>
+            <input type="file" id="upload-auth" accept=".csv">
+          </label>
+
+          <label class="upload-row">
+            <span>IDS</span>
+            <input type="file" id="upload-ids" accept=".csv">
+          </label>
+
+          <label class="upload-row">
+            <span>DNS</span>
+            <input type="file" id="upload-dns" accept=".csv">
+          </label>
+        </div>
+      </div>
+
+    </aside>
+
+    <!--Main dashboard content area-->
+    <main class="main">
+      <header class="topbar">
+        <div class="page-header">
+          <div class="page-header-text">
+            <h1 class="page-title">Dashboard</h1>
+            <p class="page-subtitle">Overview of alerts, traffic, and detection results</p>
+          </div>
+        </div>
+
+        <!--Top-level export action-->
+        <div class="top-actions">
+          <button class="btn btn-primary top-btn" type="button" id="btn-export-alerts">Export Alerts CSV</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <!--High-level KPI cards showing alert severity counts-->
+        <div class="card-row">
+          <div class="kpi kpi-critical">
+            <div class="kpi-left">
+              <div class="kpi-icon">🛡️</div>
+              <div>
+                <div class="kpi-number" id="kpi-critical">0</div>
+                <div class="kpi-label">Critical Alerts</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi kpi-high">
+            <div class="kpi-left">
+              <div class="kpi-icon">⚠️</div>
+              <div>
+                <div class="kpi-number" id="kpi-high">0</div>
+                <div class="kpi-label">High Alerts</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi kpi-medium">
+            <div class="kpi-left">
+              <div class="kpi-icon">⚠︎</div>
+              <div>
+                <div class="kpi-number" id="kpi-medium">0</div>
+                <div class="kpi-label">Medium Alerts</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi kpi-low">
+            <div class="kpi-left">
+              <div class="kpi-icon">●</div>
+              <div>
+                <div class="kpi-number" id="kpi-low">0</div>
+                <div class="kpi-label">Low Alerts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Full-width chart showing raw log activity over time across all sources-->
+        <section class="panel">
+          <div class="panel-header">
+            <h2 class="panel-title">Raw Log Volume Over Time</h2>
+          </div>
+          <div class="chart chart-lines chart-full">
+            <canvas id="rawTrafficChart"></canvas>
+          </div>
+        </section>
+
+        <!--Second row with alert activity timeline and alert type breakdown-->
+        <div class="grid-2">
+          <section class="panel">
+            <div class="panel-header">
+              <h2 class="panel-title">Alert Activity Over Time</h2>
+            </div>
+            <div class="chart chart-lines">
+              <canvas id="trafficChart"></canvas>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <h2 class="panel-title">Alert Types Breakdown</h2>
+            </div>
+            <div class="breakdown">
+              <div class="breakdown-list" id="breakdown-list"></div>
+              <div class="chart chart-donut">
+                <canvas id="typeDonut"></canvas>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--Main alerts summary table with interactive filtering-->
+        <section class="panel">
+          <div class="panel-header">
+              <h2 class="panel-title">Alerts Summary</h2>
+              <div class="panel-actions">
+                <button class="chip chip-clear" id="dash-clear-alert-filters" type="button">Clear Filters</button>
+                <span class="muted" id="status-text"></span>
+              </div>
+            </div>
+
+            <!--Alert filter controls-->
+            <div class="table-filters">
+              <div class="filter-group">
+                <label for="dash-alert-time-from">From</label>
+                <input type="datetime-local" id="dash-alert-time-from">
+              </div>
+
+              <div class="filter-group">
+                <label for="dash-alert-time-to">To</label>
+                <input type="datetime-local" id="dash-alert-time-to">
+              </div>
+
+              <div class="filter-group">
+                <label for="dash-alert-type-filter">Alert Type</label>
+                <select id="dash-alert-type-filter">
+                  <option value="">All Alert Types</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="dash-alert-src-filter">Source IP</label>
+                <input type="text" id="dash-alert-src-filter" placeholder="Source IP...">
+              </div>
+
+              <div class="filter-group">
+                <label for="dash-alert-severity-filter">Severity</label>
+                <select id="dash-alert-severity-filter">
+                  <option value="">All Severities</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="dash-alert-details-filter">Details</label>
+                <input type="text" id="dash-alert-details-filter" placeholder="Details...">
+              </div>
+            </div>
+
+            <!--Alerts summary table-->
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 180px;">Time</th>
+                    <th style="width: 220px;">Alert Type</th>
+                    <th style="width: 170px;">Source IP</th>
+                    <th style="width: 130px;">Severity</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+
+                <tbody id="alerts-tbody"></tbody>
+              </table>
+            </div>
+
+            <!--Table footer showing row count / status-->
+            <div class="table-footer">
+              <span class="muted" id="table-count">No alerts loaded.</span>
+            </div>
+          </section>  
+
+        <!--Recent alerts feed and top source IP rankings-->
+        <div class="grid-2">
+          <section class="panel">
+            <div class="panel-header"><h2 class="panel-title">Recent Alerts</h2></div>
+            <ul class="activity" id="recent-activity"></ul>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header"><h2 class="panel-title">Top Log Sources</h2></div>
+            <div class="bars" id="top-sources"></div>
+          </section>
+        </div>
+
+        <!--Console output panel for generator/analysis feedback-->
+        <section class="panel">
+          <div class="panel-header"><h2 class="panel-title">Console Output</h2></div>
+          <div class="console" id="console-output">Ready.</div>
+        </section>
+
+      </section>
+    </main>
+  </div>
+
+  <!--External charting libraries-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+  <!--Main frontend JavaScript logic-->
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

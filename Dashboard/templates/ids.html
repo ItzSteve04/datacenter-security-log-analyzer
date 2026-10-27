@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Basic page metadata and responsive layout-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!--Page title for the IDS-specific view-->
+  <title>Network Security Monitoring • IDS</title>
+
+  <!--Fonts and shared / page-specific stylesheets-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ids.css') }}" />
+</head>
+<body>
+  <div class="app">
+    <!--Sidebar navigation shared across all dashboard pages-->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🛡️</div>
+        <div class="brand-text">
+          <div class="brand-title">Network Security Monitoring</div>
+          <div class="brand-subtitle">Datacenter Log Analysis</div>
+        </div>
+      </div>
+
+      <!--Navigation links with IDS page highlighted as active-->
+      <nav class="side-nav">
+        <a class="side-link" href="/"><span class="side-ico">🏠</span><span>Dashboard</span></a>
+        <a class="side-link" href="/firewall"><span class="side-ico">🔥</span><span>Firewall Alerts</span></a>
+        <a class="side-link" href="/auth"><span class="side-ico">🔑</span><span>Auth Alerts</span></a>
+        <a class="side-link active" href="/ids"><span class="side-ico">🕵️</span><span>IDS Alerts</span></a>
+        <a class="side-link" href="/dns"><span class="side-ico">🌐</span><span>DNS Alerts</span></a>
+      </nav>
+    </aside>
+
+    <!--Main IDS content area-->
+    <main class="main">
+      <header class="topbar">
+        <div class="page-header">
+          <div class="page-header-text">
+            <h1 class="page-title">IDS</h1>
+            <p class="page-subtitle">Raw logs, normalized logs, and IDS-only alerts</p>
+          </div>
+        </div>
+
+        <!--Export actions for raw and normalised IDS data-->
+        <div class="top-actions equal-actions">
+          <button class="btn btn-primary top-btn" id="btn-export-raw" type="button">Export Raw CSV</button>
+          <button class="btn btn-primary top-btn" id="btn-export-normalized" type="button">Export Normalized CSV</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <!--KPI cards showing IDS log totals and severity counts-->
+        <div class="card-row">
+          <div class="kpi">
+            <div class="kpi-left">
+              <div class="kpi-icon">📥</div>
+              <div>
+                <div class="kpi-number" id="ids-total-count">0</div>
+                <div class="kpi-label">Total IDS Logs</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi">
+            <div class="kpi-left">
+              <div class="kpi-icon">🚨</div>
+              <div>
+                <div class="kpi-number" id="ids-alert-count">0</div>
+                <div class="kpi-label">IDS Alerts</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi">
+            <div class="kpi-left">
+              <div class="kpi-icon">🔴</div>
+              <div>
+                <div class="kpi-number" id="ids-high-count">0</div>
+                <div class="kpi-label">High Severity Alerts</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi">
+            <div class="kpi-left">
+              <div class="kpi-icon">🟡</div>
+              <div>
+                <div class="kpi-number" id="ids-low-count">0</div>
+                <div class="kpi-label">Low Severity Alerts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Chart showing IDS activity volume over time-->
+        <section class="panel">
+          <div class="panel-header">
+            <h2 class="panel-title">IDS Log Activity</h2>
+          </div>
+          <div class="chart chart-lines chart-full">
+            <canvas id="ids-activity-chart"></canvas>
+          </div>
+        </section>
+
+        <!--IDS alert table with dedicated alert filters-->
+        <section class="panel">
+          <div class="panel-header">
+            <h2 class="panel-title">IDS Alerts</h2>
+            <div class="panel-actions">
+              <button class="chip chip-clear" id="ids-clear-alert-filters" type="button">Clear Filters</button>
+            </div>
+          </div>
+
+          <!--Filters for IDS alert table-->
+          <div class="table-filters">
+            <div class="filter-group">
+              <label for="ids-alert-time-from">From</label>
+              <input type="datetime-local" id="ids-alert-time-from" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-alert-time-to">To</label>
+              <input type="datetime-local" id="ids-alert-time-to" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-alert-type-filter">Alert Type</label>
+              <select id="ids-alert-type-filter">
+                <option value="">All Alert Types</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-alert-src-filter">Source IP</label>
+              <input type="text" id="ids-alert-src-filter" placeholder="e.g. 10.0.0.20" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-alert-severity-filter">Severity</label>
+              <select id="ids-alert-severity-filter">
+                <option value="">All Severities</option>
+              </select>
+            </div>
+          </div>
+
+          <!--IDS alerts table-->
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Alert Type</th>
+                  <th>Source IP</th>
+                  <th>Severity</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody id="ids-alerts-body"></tbody>
+            </table>
+          </div>
+
+          <div class="table-footer">
+            <span class="muted" id="ids-alerts-count">0 alerts</span>
+          </div>
+        </section>
+
+        <!--IDS logs table with raw / normalised tab switcher-->
+        <section class="panel">
+          <div class="panel-header">
+            <h2 class="panel-title">IDS Logs</h2>
+
+            <div class="panel-actions">
+              <button class="chip chip-clear" id="ids-clear-filters" type="button">Clear Filters</button>
+
+              <!--Tab controls to switch between raw and normalised IDS logs-->
+              <div class="log-tabs">
+                <button class="chip active" data-tab="raw" type="button">Raw Logs</button>
+                <button class="chip" data-tab="normalized" type="button">Normalized Logs</button>
+              </div>
+            </div>
+          </div>
+
+          <!--Filters for IDS log table-->
+          <div class="table-filters">
+            <div class="filter-group">
+              <label for="ids-time-from">From</label>
+              <input type="datetime-local" id="ids-time-from" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-time-to">To</label>
+              <input type="datetime-local" id="ids-time-to" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-src-filter">Source IP</label>
+              <input type="text" id="ids-src-filter" placeholder="e.g. 10.0.0.20" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-dst-filter">Destination IP</label>
+              <input type="text" id="ids-dst-filter" placeholder="e.g. 10.0.0.50" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-signature-filter">Signature</label>
+              <input type="text" id="ids-signature-filter" placeholder="e.g. ET SCAN" />
+            </div>
+
+            <div class="filter-group">
+              <label for="ids-severity-filter">Severity</label>
+              <select id="ids-severity-filter">
+                <option value="">All Severities</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Dynamic IDS log table populated by JavaScript-->
+          <div class="table-wrap">
+            <table class="table">
+              <thead id="ids-table-head"></thead>
+              <tbody id="ids-table-body"></tbody>
+            </table>
+          </div>
+
+          <div class="table-footer">
+            <span class="muted" id="ids-table-count">0 rows</span>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <!--Chart library and IDS-specific frontend logic-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='ids.js') }}"></script>
+</body>
+</html>

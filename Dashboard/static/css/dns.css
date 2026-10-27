@@ -1,0 +1,10 @@
+/* DNS activity chart */
+#dns-activity-chart {
+  display: block;
+}
+
+/* Wrap long DNS values (domains, IPs, logs) */
+#dns-alerts-body td:nth-child(4),
+#dns-table-body td {
+  word-break: break-word;
+}

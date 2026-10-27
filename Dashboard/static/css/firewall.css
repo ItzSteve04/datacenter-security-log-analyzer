@@ -1,0 +1,80 @@
+/* Firewall page specific styles */
+#fw-activity-chart{
+  display: block;
+}
+
+#fw-alerts-body td:nth-child(3),
+#fw-table-body td{
+  word-break: break-word;
+}
+
+/* Ensure table uses fixed column layout */
+.fw-alerts-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Align content nicely */
+.fw-alerts-table th,
+.fw-alerts-table td {
+  vertical-align: top;
+  padding: 12px 12px;
+}
+
+/* Time column */
+.fw-alerts-table th:nth-child(1),
+.fw-alerts-table td:nth-child(1) {
+  width: 160px;
+  white-space: nowrap;
+}
+
+/* Alert Type */
+.fw-alerts-table th:nth-child(2),
+.fw-alerts-table td:nth-child(2) {
+  width: 220px;
+}
+
+/* Source IP */
+.fw-alerts-table th:nth-child(3),
+.fw-alerts-table td:nth-child(3) {
+  width: 150px;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+/* Severity */
+.fw-alerts-table th:nth-child(4),
+.fw-alerts-table td:nth-child(4) {
+  width: 120px;
+  text-align: left;
+}
+
+/* Details column expands */
+.fw-alerts-table th:nth-child(5),
+.fw-alerts-table td:nth-child(5) {
+  width: auto;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Prevent weird wrapping for IP + time */
+.fw-alerts-table td:nth-child(1),
+.fw-alerts-table td:nth-child(3) {
+  white-space: nowrap;
+}
+
+/* Better row hover */
+.fw-alerts-table tbody tr:hover td {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Keep header aligned */
+.fw-alerts-table thead th {
+  text-align: left;
+}
+
+/* Fix badge alignment */
+.fw-alerts-table td .badge {
+  display: inline-block;
+}

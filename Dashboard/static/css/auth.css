@@ -1,0 +1,10 @@
+/* Auth activity chart container */
+#auth-activity-chart {
+  display: block;
+}
+
+/* Ensure long text (IPs, logs) wraps properly */
+#auth-alerts-body td:nth-child(3),
+#auth-table-body td {
+  word-break: break-word;
+}

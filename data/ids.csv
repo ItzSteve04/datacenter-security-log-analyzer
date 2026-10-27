@@ -1,0 +1,658 @@
+ts,src,dest,sig,sev
+2026-02-10 10:00:05,10.0.0.189,10.0.0.33,ET POLICY External IP Check,low
+2026-02-10 10:00:07,10.0.0.198,10.0.0.199,ET POLICY Windows executable download,low
+2026-02-10 10:00:08,10.0.0.218,10.0.0.161,ET DNS Query for .local TLD,medium
+2026-02-10 10:00:10,10.0.0.26,10.0.0.40,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:00:16,198.51.100.75,10.0.0.183,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:00:17,198.51.100.56,10.0.0.29,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:00:26,10.0.0.133,10.0.0.26,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:00:33,10.0.0.246,10.0.0.71,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:00:34,198.51.100.14,10.0.0.244,ET SCAN Potential Recon Activity,high
+2026-02-10 10:00:49,10.0.0.158,10.0.0.191,ET DNS Query for .local TLD,high
+2026-02-10 10:01:15,10.0.0.134,10.0.0.212,ET POLICY External IP Check,low
+2026-02-10 10:01:21,10.0.0.45,10.0.0.79,ET POLICY External IP Check,medium
+2026-02-10 10:01:26,203.0.113.8,10.0.0.211,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:01:28,10.0.0.126,10.0.0.167,ET INFO TLS Certificate Observed,low
+2026-02-10 10:01:34,10.0.0.218,10.0.0.131,ET POLICY External IP Check,low
+2026-02-10 10:01:46,192.0.2.120,10.0.0.130,ET DNS Query for .local TLD,medium
+2026-02-10 10:01:47,10.0.0.251,10.0.0.119,ET DNS Query for .local TLD,low
+2026-02-10 10:01:56,10.0.0.194,10.0.0.83,ET DNS Query for .local TLD,low
+2026-02-10 10:02:11,10.0.0.248,10.0.0.37,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:02:17,10.0.0.123,10.0.0.52,ET INFO Observed DNS Query,low
+2026-02-10 10:02:17,10.0.0.244,10.0.0.142,ET POLICY Windows executable download,medium
+2026-02-10 10:02:21,10.0.0.58,10.0.0.179,ET INFO Observed DNS Query,low
+2026-02-10 10:02:27,10.0.0.99,10.0.0.119,ET POLICY External IP Check,low
+2026-02-10 10:02:40,10.0.0.34,10.0.0.194,ET POLICY External IP Check,medium
+2026-02-10 10:02:50,10.0.0.30,10.0.0.50,ET SCAN Potential Recon Activity,low
+2026-02-10 10:02:56,10.0.0.91,10.0.0.161,ET DNS Query for .local TLD,high
+2026-02-10 10:03:12,192.0.2.212,10.0.0.159,ET INFO Observed DNS Query,low
+2026-02-10 10:03:12,10.0.0.61,10.0.0.130,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:03:12,10.0.0.132,10.0.0.198,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:03:16,10.0.0.10,10.0.0.104,ET DNS Query for .local TLD,low
+2026-02-10 10:03:22,203.0.113.237,10.0.0.193,ET DNS Query for .local TLD,low
+2026-02-10 10:03:25,10.0.0.225,10.0.0.202,ET POLICY Windows executable download,low
+2026-02-10 10:03:26,192.0.2.82,10.0.0.219,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:03:35,203.0.113.5,10.0.0.10,ET SCAN Nmap,high
+2026-02-10 10:03:43,203.0.113.179,10.0.0.253,ET POLICY External IP Check,high
+2026-02-10 10:03:47,10.0.0.166,10.0.0.131,ET POLICY External IP Check,medium
+2026-02-10 10:04:01,198.51.100.139,10.0.0.148,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:04:01,10.0.0.165,10.0.0.85,ET SCAN Potential Recon Activity,low
+2026-02-10 10:04:05,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:09,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:13,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:16,10.0.0.42,10.0.0.34,ET SCAN Potential Recon Activity,low
+2026-02-10 10:04:17,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:21,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:25,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:29,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:30,203.0.113.137,10.0.0.72,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:04:33,203.0.113.5,10.0.0.10,ET WEB_SERVER Possible Exploit Attempt,high
+2026-02-10 10:04:37,10.0.0.154,10.0.0.212,ET SCAN Potential Recon Activity,high
+2026-02-10 10:04:47,10.0.0.74,10.0.0.207,ET POLICY Windows executable download,high
+2026-02-10 10:04:49,192.0.2.52,10.0.0.89,ET POLICY Windows executable download,low
+2026-02-10 10:04:57,192.0.2.54,10.0.0.2,ET POLICY Windows executable download,medium
+2026-02-10 10:04:57,10.0.0.109,10.0.0.98,ET POLICY External IP Check,medium
+2026-02-10 10:05:00,10.0.0.167,10.0.0.60,ET POLICY External IP Check,high
+2026-02-10 10:05:14,192.0.2.20,10.0.0.98,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:05:20,10.0.0.237,10.0.0.38,ET POLICY Windows executable download,low
+2026-02-10 10:05:20,10.0.0.79,10.0.0.47,ET DNS Query for .local TLD,low
+2026-02-10 10:05:26,10.0.0.232,10.0.0.185,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:05:36,10.0.0.132,10.0.0.19,ET DNS Query for .local TLD,medium
+2026-02-10 10:05:43,10.0.0.148,10.0.0.144,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:05:46,192.0.2.152,10.0.0.212,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:05:59,10.0.0.132,10.0.0.168,ET POLICY Windows executable download,high
+2026-02-10 10:06:12,192.0.2.236,10.0.0.238,ET POLICY External IP Check,low
+2026-02-10 10:06:16,192.0.2.144,10.0.0.51,ET POLICY External IP Check,medium
+2026-02-10 10:06:17,198.51.100.29,10.0.0.50,ET POLICY Windows executable download,low
+2026-02-10 10:06:23,10.0.0.216,10.0.0.68,ET SCAN Potential Recon Activity,low
+2026-02-10 10:06:23,10.0.0.133,10.0.0.27,ET SCAN Potential Recon Activity,low
+2026-02-10 10:06:26,10.0.0.126,10.0.0.200,ET INFO TLS Certificate Observed,low
+2026-02-10 10:06:38,198.51.100.39,10.0.0.198,ET POLICY External IP Check,low
+2026-02-10 10:06:54,10.0.0.231,10.0.0.8,ET INFO Observed DNS Query,low
+2026-02-10 10:07:02,10.0.0.141,10.0.0.217,ET INFO Observed DNS Query,low
+2026-02-10 10:07:19,10.0.0.139,10.0.0.245,ET SCAN Potential Recon Activity,low
+2026-02-10 10:07:19,10.0.0.197,10.0.0.88,ET INFO TLS Certificate Observed,low
+2026-02-10 10:07:20,10.0.0.220,10.0.0.24,ET DNS Query for .local TLD,medium
+2026-02-10 10:07:35,10.0.0.37,10.0.0.230,ET SCAN Potential Recon Activity,high
+2026-02-10 10:07:37,203.0.113.121,10.0.0.73,ET DNS Query for .local TLD,medium
+2026-02-10 10:07:48,10.0.0.38,10.0.0.21,ET INFO TLS Certificate Observed,high
+2026-02-10 10:07:52,10.0.0.240,10.0.0.172,ET DNS Query for .local TLD,medium
+2026-02-10 10:07:58,192.0.2.29,10.0.0.89,ET POLICY External IP Check,medium
+2026-02-10 10:08:02,10.0.0.135,10.0.0.85,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:08:06,10.0.0.207,10.0.0.38,ET INFO Observed DNS Query,medium
+2026-02-10 10:08:13,198.51.100.105,10.0.0.212,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:08:18,10.0.0.20,198.51.100.146,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:18,203.0.113.241,10.0.0.113,ET POLICY Windows executable download,high
+2026-02-10 10:08:18,203.0.113.21,10.0.0.243,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:08:21,10.0.0.20,198.51.100.122,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:24,10.0.0.20,198.51.100.227,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:24,10.0.0.73,10.0.0.130,ET POLICY Windows executable download,low
+2026-02-10 10:08:31,10.0.0.20,192.0.2.72,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:31,10.0.0.20,192.0.2.115,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:34,203.0.113.220,10.0.0.119,ET POLICY External IP Check,low
+2026-02-10 10:08:34,10.0.0.20,192.0.2.68,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:39,10.0.0.4,10.0.0.17,ET DNS Query for .local TLD,medium
+2026-02-10 10:08:39,10.0.0.20,192.0.2.126,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:40,10.0.0.20,8.8.8.8,ET TROJAN Possible C2 Traffic,critical
+2026-02-10 10:08:48,10.0.0.20,192.0.2.10,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:52,192.0.2.8,10.0.0.148,ET POLICY Windows executable download,low
+2026-02-10 10:08:54,10.0.0.125,10.0.0.15,ET DNS Query for .local TLD,high
+2026-02-10 10:08:54,10.0.0.20,203.0.113.135,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:08:58,10.0.0.20,192.0.2.213,ET TROJAN Possible C2 Traffic,high
+2026-02-10 10:09:06,10.0.0.89,10.0.0.106,ET DNS Query for .local TLD,low
+2026-02-10 10:09:13,10.0.0.195,10.0.0.92,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:09:15,192.0.2.35,10.0.0.240,ET INFO Observed DNS Query,low
+2026-02-10 10:09:15,192.0.2.88,10.0.0.131,ET POLICY External IP Check,high
+2026-02-10 10:09:17,198.51.100.170,10.0.0.60,ET DNS Query for .local TLD,low
+2026-02-10 10:09:21,192.0.2.212,10.0.0.237,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:09:29,10.0.0.161,10.0.0.182,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:09:34,198.51.100.108,10.0.0.63,ET POLICY External IP Check,low
+2026-02-10 10:09:37,10.0.0.120,10.0.0.138,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:09:55,10.0.0.164,10.0.0.130,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:10:06,203.0.113.192,10.0.0.240,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:10:12,10.0.0.105,10.0.0.15,ET DNS Query for .local TLD,medium
+2026-02-10 10:10:12,10.0.0.104,10.0.0.116,ET INFO Observed DNS Query,medium
+2026-02-10 10:10:13,198.51.100.209,10.0.0.254,ET DNS Query for .local TLD,low
+2026-02-10 10:10:18,10.0.0.232,10.0.0.115,ET INFO Observed DNS Query,low
+2026-02-10 10:10:32,10.0.0.18,10.0.0.152,ET DNS Query for .local TLD,low
+2026-02-10 10:10:36,10.0.0.66,10.0.0.183,ET INFO TLS Certificate Observed,low
+2026-02-10 10:10:41,10.0.0.41,10.0.0.16,ET INFO Observed DNS Query,medium
+2026-02-10 10:10:45,10.0.0.47,10.0.0.246,ET DNS Query for .local TLD,medium
+2026-02-10 10:10:50,10.0.0.204,10.0.0.125,ET POLICY External IP Check,medium
+2026-02-10 10:11:04,10.0.0.231,10.0.0.26,ET POLICY External IP Check,high
+2026-02-10 10:11:07,10.0.0.105,10.0.0.228,ET INFO Observed DNS Query,low
+2026-02-10 10:11:18,10.0.0.125,10.0.0.213,ET POLICY External IP Check,medium
+2026-02-10 10:11:25,203.0.113.72,10.0.0.130,ET POLICY Windows executable download,medium
+2026-02-10 10:11:27,10.0.0.56,10.0.0.80,ET POLICY External IP Check,low
+2026-02-10 10:11:33,192.0.2.110,10.0.0.151,ET DNS Query for .local TLD,high
+2026-02-10 10:11:34,10.0.0.198,10.0.0.197,ET POLICY Windows executable download,medium
+2026-02-10 10:11:45,192.0.2.223,10.0.0.43,ET POLICY External IP Check,low
+2026-02-10 10:11:55,192.0.2.200,10.0.0.238,ET INFO Observed DNS Query,medium
+2026-02-10 10:12:01,10.0.0.89,10.0.0.34,ET DNS Query for .local TLD,high
+2026-02-10 10:12:20,10.0.0.146,10.0.0.163,ET POLICY External IP Check,low
+2026-02-10 10:12:21,10.0.0.184,10.0.0.231,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:12:30,10.0.0.136,10.0.0.248,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:12:44,10.0.0.245,10.0.0.189,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:12:56,10.0.0.238,10.0.0.132,ET INFO Observed DNS Query,high
+2026-02-10 10:12:58,203.0.113.125,10.0.0.169,ET DNS Query for .local TLD,low
+2026-02-10 10:12:59,10.0.0.134,10.0.0.119,ET INFO Observed DNS Query,medium
+2026-02-10 10:13:01,10.0.0.254,10.0.0.95,ET POLICY Windows executable download,low
+2026-02-10 10:13:01,10.0.0.51,10.0.0.134,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:13:01,10.0.0.110,10.0.0.189,ET INFO Observed DNS Query,high
+2026-02-10 10:13:07,10.0.0.80,10.0.0.140,ET DNS Query for .local TLD,medium
+2026-02-10 10:13:15,10.0.0.92,10.0.0.197,ET INFO TLS Certificate Observed,high
+2026-02-10 10:13:18,192.0.2.127,10.0.0.30,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:13:27,10.0.0.252,10.0.0.64,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:13:32,198.51.100.163,10.0.0.123,ET SCAN Potential Recon Activity,low
+2026-02-10 10:13:33,10.0.0.184,10.0.0.96,ET DNS Query for .local TLD,low
+2026-02-10 10:13:33,10.0.0.153,10.0.0.140,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:13:43,10.0.0.70,10.0.0.214,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:13:50,10.0.0.207,10.0.0.242,ET POLICY Windows executable download,medium
+2026-02-10 10:14:01,203.0.113.56,10.0.0.63,ET INFO Observed DNS Query,low
+2026-02-10 10:14:02,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:05,10.0.0.64,10.0.0.97,ET POLICY External IP Check,medium
+2026-02-10 10:14:05,10.0.0.143,10.0.0.81,ET POLICY Windows executable download,medium
+2026-02-10 10:14:12,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:14,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:15,10.0.0.30,10.0.0.61,ET POLICY Windows executable download,high
+2026-02-10 10:14:17,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:23,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:26,198.51.100.249,10.0.0.203,ET DNS Query for .local TLD,low
+2026-02-10 10:14:42,203.0.113.71,10.0.0.237,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:14:45,10.0.0.80,10.0.0.162,ET INFO Observed DNS Query,low
+2026-02-10 10:14:45,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:51,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:51,10.0.0.30,10.0.0.61,ET POLICY Suspicious Internal Transfer,high
+2026-02-10 10:14:56,203.0.113.174,10.0.0.76,ET DNS Query for .local TLD,medium
+2026-02-10 10:14:59,10.0.0.143,10.0.0.85,ET INFO Observed DNS Query,medium
+2026-02-10 10:15:06,192.0.2.254,10.0.0.204,ET POLICY Windows executable download,low
+2026-02-10 10:15:30,10.0.0.107,10.0.0.100,ET DNS Query for .local TLD,low
+2026-02-10 10:15:31,10.0.0.139,10.0.0.245,ET SCAN Potential Recon Activity,high
+2026-02-10 10:15:33,10.0.0.38,10.0.0.133,ET POLICY Windows executable download,low
+2026-02-10 10:15:49,10.0.0.206,10.0.0.129,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:15:50,10.0.0.173,10.0.0.191,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:15:51,198.51.100.158,10.0.0.196,ET POLICY Windows executable download,medium
+2026-02-10 10:15:55,10.0.0.201,10.0.0.134,ET POLICY External IP Check,medium
+2026-02-10 10:15:58,10.0.0.238,10.0.0.188,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:16:00,10.0.0.121,10.0.0.42,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:16:01,198.51.100.65,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:02,203.0.113.191,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:03,10.0.0.45,10.0.0.157,ET SCAN Potential Recon Activity,low
+2026-02-10 10:16:06,10.0.0.26,10.0.0.125,ET INFO TLS Certificate Observed,low
+2026-02-10 10:16:07,192.0.2.37,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:07,10.0.0.192,10.0.0.247,ET SCAN Potential Recon Activity,low
+2026-02-10 10:16:13,198.51.100.213,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:18,203.0.113.173,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:25,198.51.100.4,10.0.0.236,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:16:25,10.0.0.215,10.0.0.76,ET INFO Observed DNS Query,low
+2026-02-10 10:16:27,203.0.113.66,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:34,203.0.113.44,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:40,10.0.0.97,10.0.0.179,ET INFO Observed DNS Query,low
+2026-02-10 10:16:42,198.51.100.190,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:43,203.0.113.124,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:43,192.0.2.179,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:54,203.0.113.136,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:55,10.0.0.214,10.0.0.66,ET INFO Observed DNS Query,medium
+2026-02-10 10:16:57,10.0.0.58,10.0.0.210,ET INFO Observed DNS Query,low
+2026-02-10 10:16:57,192.0.2.106,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:57,198.51.100.156,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:58,10.0.0.90,10.0.0.59,ET DNS Query for .local TLD,low
+2026-02-10 10:16:58,203.0.113.135,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:16:58,192.0.2.66,10.0.0.237,ET POLICY Windows executable download,medium
+2026-02-10 10:17:01,10.0.0.247,10.0.0.209,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:17:04,203.0.113.165,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:08,203.0.113.23,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:08,10.0.0.6,10.0.0.91,ET POLICY External IP Check,medium
+2026-02-10 10:17:25,203.0.113.99,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:26,192.0.2.94,10.0.0.247,ET INFO TLS Certificate Observed,high
+2026-02-10 10:17:26,10.0.0.170,10.0.0.212,ET INFO TLS Certificate Observed,high
+2026-02-10 10:17:32,198.51.100.138,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:32,10.0.0.157,10.0.0.243,ET POLICY Windows executable download,low
+2026-02-10 10:17:33,10.0.0.254,10.0.0.197,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:17:37,192.0.2.30,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:38,203.0.113.212,10.0.0.141,ET POLICY Windows executable download,high
+2026-02-10 10:17:38,203.0.113.167,10.0.0.68,ET INFO Observed DNS Query,low
+2026-02-10 10:17:38,198.51.100.92,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:44,192.0.2.130,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:45,198.51.100.26,10.0.0.40,ET DOS Possible Flood,high
+2026-02-10 10:17:48,192.0.2.224,10.0.0.110,ET DNS Query for .local TLD,high
+2026-02-10 10:17:50,10.0.0.165,10.0.0.16,ET POLICY Windows executable download,low
+2026-02-10 10:17:51,10.0.0.46,10.0.0.118,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:17:54,10.0.0.194,10.0.0.214,ET INFO TLS Certificate Observed,low
+2026-02-10 10:18:01,10.0.0.240,10.0.0.82,ET INFO TLS Certificate Observed,low
+2026-02-10 10:18:14,10.0.0.92,10.0.0.85,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:18:16,10.0.0.245,10.0.0.198,ET DNS Query for .local TLD,low
+2026-02-10 10:18:23,10.0.0.33,10.0.0.87,ET SCAN Potential Recon Activity,low
+2026-02-10 10:18:23,192.0.2.215,10.0.0.151,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:18:29,10.0.0.149,10.0.0.64,ET POLICY External IP Check,low
+2026-02-10 10:18:43,10.0.0.160,10.0.0.214,ET DNS Query for .local TLD,medium
+2026-02-10 10:18:43,198.51.100.223,10.0.0.116,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:18:46,10.0.0.62,10.0.0.236,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:19:01,203.0.113.181,10.0.0.53,ET POLICY External IP Check,low
+2026-02-10 10:19:14,10.0.0.220,10.0.0.186,ET POLICY External IP Check,medium
+2026-02-10 10:19:20,10.0.0.138,10.0.0.242,ET POLICY Windows executable download,low
+2026-02-10 10:19:22,10.0.0.93,10.0.0.251,ET INFO TLS Certificate Observed,low
+2026-02-10 10:19:46,203.0.113.206,10.0.0.175,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:19:48,10.0.0.217,10.0.0.98,ET INFO Observed DNS Query,low
+2026-02-10 10:19:49,192.0.2.130,10.0.0.51,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:19:52,198.51.100.60,10.0.0.77,ET POLICY External IP Check,medium
+2026-02-10 10:19:55,10.0.0.197,10.0.0.7,ET INFO TLS Certificate Observed,low
+2026-02-10 10:19:57,10.0.0.126,10.0.0.137,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:20:01,192.0.2.175,10.0.0.65,ET POLICY Windows executable download,medium
+2026-02-10 10:20:02,10.0.0.192,10.0.0.179,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:20:07,10.0.0.181,10.0.0.135,ET SCAN Potential Recon Activity,low
+2026-02-10 10:20:27,10.0.0.121,10.0.0.114,ET INFO TLS Certificate Observed,low
+2026-02-10 10:20:29,10.0.0.99,10.0.0.125,ET INFO Observed DNS Query,medium
+2026-02-10 10:20:34,10.0.0.61,10.0.0.7,ET DNS Query for .local TLD,low
+2026-02-10 10:20:42,10.0.0.193,10.0.0.236,ET INFO TLS Certificate Observed,low
+2026-02-10 10:20:53,203.0.113.14,10.0.0.22,ET POLICY External IP Check,low
+2026-02-10 10:21:08,10.0.0.229,10.0.0.209,ET DNS Query for .local TLD,low
+2026-02-10 10:21:17,10.0.0.152,10.0.0.13,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:21:22,203.0.113.229,10.0.0.21,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:21:37,10.0.0.142,10.0.0.172,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:21:45,10.0.0.137,10.0.0.226,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:21:46,10.0.0.183,10.0.0.42,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:21:57,10.0.0.72,10.0.0.170,ET POLICY Windows executable download,medium
+2026-02-10 10:21:58,10.0.0.203,10.0.0.40,ET INFO TLS Certificate Observed,low
+2026-02-10 10:22:00,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:02,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:03,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:03,203.0.113.39,10.0.0.118,ET POLICY External IP Check,low
+2026-02-10 10:22:05,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:06,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:06,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:07,10.0.0.150,10.0.0.106,ET INFO Observed DNS Query,medium
+2026-02-10 10:22:09,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:12,192.0.2.79,10.0.0.248,ET DNS Query for .local TLD,high
+2026-02-10 10:22:12,10.0.0.30,10.0.0.58,ET POLICY External IP Check,medium
+2026-02-10 10:22:13,10.0.0.72,10.0.0.132,ET DNS Query for .local TLD,high
+2026-02-10 10:22:14,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:15,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:17,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:19,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:20,10.0.0.57,10.0.0.238,ET INFO Observed DNS Query,medium
+2026-02-10 10:22:21,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:26,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:29,203.0.113.9,10.0.0.58,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:22:29,192.0.2.119,10.0.0.33,ET DNS Query for .local TLD,low
+2026-02-10 10:22:30,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:32,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:34,10.0.0.250,10.0.0.39,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:22:34,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:37,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:38,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:39,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:43,10.0.0.33,10.0.0.20,ET POLICY Windows executable download,high
+2026-02-10 10:22:47,10.0.0.140,10.0.0.192,ET POLICY External IP Check,low
+2026-02-10 10:22:48,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:52,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:54,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:56,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:22:57,198.51.100.45,10.0.0.80,ET SCAN Potential Recon Activity,high
+2026-02-10 10:23:00,10.0.0.96,10.0.0.4,ET DNS Query for .local TLD,low
+2026-02-10 10:23:01,10.0.0.93,10.0.0.183,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:23:03,10.0.0.57,10.0.0.96,ET POLICY External IP Check,low
+2026-02-10 10:23:04,10.0.0.156,10.0.0.175,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:23:05,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:07,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:09,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:09,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:11,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:16,10.0.0.181,10.0.0.234,ET INFO Observed DNS Query,high
+2026-02-10 10:23:19,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:22,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:25,203.0.113.94,10.0.0.102,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:23:35,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:41,10.0.0.252,10.0.0.220,ET DNS Query for .local TLD,medium
+2026-02-10 10:23:43,10.0.0.53,10.0.0.105,ET SCAN Potential Recon Activity,low
+2026-02-10 10:23:47,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:52,198.51.100.45,10.0.0.80,ET EXPLOIT Possible Remote Code Execution,critical
+2026-02-10 10:23:53,10.0.0.168,10.0.0.36,ET INFO Observed DNS Query,medium
+2026-02-10 10:23:54,10.0.0.164,10.0.0.114,ET INFO TLS Certificate Observed,low
+2026-02-10 10:24:00,10.0.0.134,10.0.0.220,ET POLICY External IP Check,medium
+2026-02-10 10:24:05,10.0.0.131,10.0.0.213,ET POLICY Windows executable download,medium
+2026-02-10 10:24:09,203.0.113.21,10.0.0.46,ET INFO TLS Certificate Observed,low
+2026-02-10 10:24:11,10.0.0.56,10.0.0.234,ET INFO Observed DNS Query,high
+2026-02-10 10:24:18,10.0.0.164,10.0.0.100,ET INFO Observed DNS Query,medium
+2026-02-10 10:24:21,10.0.0.221,10.0.0.38,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:24:26,10.0.0.26,10.0.0.83,ET POLICY External IP Check,medium
+2026-02-10 10:24:28,203.0.113.8,10.0.0.45,ET INFO Observed DNS Query,low
+2026-02-10 10:24:48,10.0.0.131,10.0.0.202,ET INFO Observed DNS Query,low
+2026-02-10 10:24:49,10.0.0.67,10.0.0.68,ET INFO Observed DNS Query,medium
+2026-02-10 10:24:57,10.0.0.37,10.0.0.109,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:24:59,203.0.113.98,10.0.0.161,ET POLICY Windows executable download,low
+2026-02-10 10:25:00,203.0.113.120,10.0.0.141,ET DNS Query for .local TLD,low
+2026-02-10 10:25:02,10.0.0.82,10.0.0.13,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:25:05,198.51.100.223,10.0.0.70,ET SCAN Potential Recon Activity,low
+2026-02-10 10:25:09,203.0.113.169,10.0.0.235,ET DNS Query for .local TLD,medium
+2026-02-10 10:25:12,198.51.100.108,10.0.0.202,ET DNS Query for .local TLD,medium
+2026-02-10 10:25:18,203.0.113.93,10.0.0.22,ET SCAN Potential Recon Activity,low
+2026-02-10 10:25:26,10.0.0.9,10.0.0.122,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:25:34,10.0.0.124,10.0.0.131,ET POLICY Windows executable download,medium
+2026-02-10 10:25:41,10.0.0.182,10.0.0.218,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:25:45,198.51.100.48,10.0.0.207,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:25:51,192.0.2.188,10.0.0.77,ET INFO TLS Certificate Observed,low
+2026-02-10 10:26:03,10.0.0.200,10.0.0.174,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:26:11,192.0.2.156,10.0.0.210,ET POLICY Windows executable download,medium
+2026-02-10 10:26:17,10.0.0.203,10.0.0.179,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:26:25,10.0.0.118,10.0.0.207,ET INFO Observed DNS Query,low
+2026-02-10 10:26:38,198.51.100.60,10.0.0.184,ET INFO TLS Certificate Observed,low
+2026-02-10 10:26:44,203.0.113.93,10.0.0.76,ET SCAN Potential Recon Activity,low
+2026-02-10 10:26:49,10.0.0.38,10.0.0.213,ET DNS Query for .local TLD,medium
+2026-02-10 10:26:55,10.0.0.14,10.0.0.102,ET SCAN Potential Recon Activity,low
+2026-02-10 10:26:56,10.0.0.102,10.0.0.142,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:26:58,10.0.0.221,10.0.0.156,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:26:59,10.0.0.73,10.0.0.102,ET POLICY Windows executable download,high
+2026-02-10 10:27:04,10.0.0.57,10.0.0.191,ET POLICY External IP Check,medium
+2026-02-10 10:27:18,198.51.100.70,10.0.0.35,ET POLICY Windows executable download,low
+2026-02-10 10:27:18,10.0.0.109,10.0.0.124,ET DNS Query for .local TLD,medium
+2026-02-10 10:27:20,10.0.0.71,10.0.0.44,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:27:27,10.0.0.40,10.0.0.250,ET INFO Observed DNS Query,low
+2026-02-10 10:27:34,10.0.0.83,10.0.0.227,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:27:35,10.0.0.131,10.0.0.210,ET INFO Observed DNS Query,high
+2026-02-10 10:27:41,10.0.0.159,10.0.0.107,ET DNS Query for .local TLD,low
+2026-02-10 10:27:44,10.0.0.77,10.0.0.32,ET SCAN Potential Recon Activity,low
+2026-02-10 10:27:51,198.51.100.139,10.0.0.140,ET POLICY Windows executable download,high
+2026-02-10 10:27:56,10.0.0.218,10.0.0.49,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:27:58,192.0.2.207,10.0.0.140,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:28:01,10.0.0.224,10.0.0.78,ET DNS Query for .local TLD,high
+2026-02-10 10:28:16,10.0.0.186,10.0.0.131,ET SCAN Potential Recon Activity,high
+2026-02-10 10:28:20,203.0.113.26,10.0.0.78,ET SCAN Potential Recon Activity,high
+2026-02-10 10:28:31,10.0.0.29,10.0.0.221,ET POLICY External IP Check,medium
+2026-02-10 10:28:33,10.0.0.196,10.0.0.167,ET DNS Query for .local TLD,medium
+2026-02-10 10:28:50,10.0.0.128,10.0.0.254,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:28:51,10.0.0.228,10.0.0.210,ET INFO Observed DNS Query,low
+2026-02-10 10:28:57,10.0.0.231,10.0.0.211,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:28:58,10.0.0.86,10.0.0.201,ET DNS Query for .local TLD,medium
+2026-02-10 10:28:59,10.0.0.223,10.0.0.17,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:29:08,10.0.0.123,10.0.0.206,ET SCAN Potential Recon Activity,low
+2026-02-10 10:29:08,10.0.0.125,10.0.0.28,ET INFO Observed DNS Query,low
+2026-02-10 10:29:16,10.0.0.200,10.0.0.104,ET POLICY Windows executable download,low
+2026-02-10 10:29:32,10.0.0.223,10.0.0.31,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:29:34,10.0.0.72,10.0.0.253,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:29:38,10.0.0.248,10.0.0.70,ET INFO TLS Certificate Observed,low
+2026-02-10 10:29:48,203.0.113.24,10.0.0.186,ET SCAN Potential Recon Activity,low
+2026-02-10 10:29:53,10.0.0.76,10.0.0.104,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:29:54,10.0.0.88,10.0.0.143,ET POLICY External IP Check,medium
+2026-02-10 10:29:56,203.0.113.214,10.0.0.19,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:29:59,10.0.0.149,10.0.0.82,ET INFO TLS Certificate Observed,low
+2026-02-10 10:30:03,10.0.0.70,10.0.0.186,ET INFO Observed DNS Query,low
+2026-02-10 10:30:06,10.0.0.151,10.0.0.56,ET INFO Observed DNS Query,low
+2026-02-10 10:30:09,198.51.100.161,10.0.0.22,ET POLICY Windows executable download,medium
+2026-02-10 10:30:17,10.0.0.106,10.0.0.239,ET POLICY Windows executable download,medium
+2026-02-10 10:30:23,10.0.0.56,10.0.0.57,ET DNS Query for .local TLD,medium
+2026-02-10 10:30:30,10.0.0.196,10.0.0.48,ET INFO TLS Certificate Observed,low
+2026-02-10 10:30:34,10.0.0.66,10.0.0.73,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:30:38,10.0.0.243,10.0.0.107,ET POLICY Windows executable download,medium
+2026-02-10 10:30:44,10.0.0.7,10.0.0.114,ET DNS Query for .local TLD,medium
+2026-02-10 10:30:57,10.0.0.126,10.0.0.114,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:31:00,10.0.0.175,10.0.0.40,ET POLICY External IP Check,low
+2026-02-10 10:31:00,192.0.2.165,10.0.0.237,ET POLICY Windows executable download,medium
+2026-02-10 10:31:01,10.0.0.228,10.0.0.69,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:31:04,10.0.0.246,10.0.0.253,ET POLICY External IP Check,medium
+2026-02-10 10:31:15,192.0.2.96,10.0.0.48,ET INFO Observed DNS Query,low
+2026-02-10 10:31:32,10.0.0.139,10.0.0.131,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:31:39,10.0.0.167,10.0.0.145,ET INFO Observed DNS Query,medium
+2026-02-10 10:31:40,10.0.0.73,10.0.0.31,ET POLICY Windows executable download,low
+2026-02-10 10:32:03,203.0.113.7,10.0.0.156,ET INFO TLS Certificate Observed,low
+2026-02-10 10:32:05,10.0.0.7,10.0.0.33,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:32:12,192.0.2.229,10.0.0.62,ET INFO TLS Certificate Observed,low
+2026-02-10 10:32:12,10.0.0.3,10.0.0.170,ET DNS Query for .local TLD,low
+2026-02-10 10:32:12,10.0.0.35,10.0.0.211,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:32:30,192.0.2.13,10.0.0.154,ET POLICY External IP Check,medium
+2026-02-10 10:32:42,198.51.100.73,10.0.0.18,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:32:46,192.0.2.85,10.0.0.67,ET DNS Query for .local TLD,low
+2026-02-10 10:32:46,10.0.0.247,10.0.0.239,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:32:49,10.0.0.187,10.0.0.248,ET POLICY Windows executable download,low
+2026-02-10 10:32:56,10.0.0.131,10.0.0.121,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:33:00,10.0.0.19,10.0.0.138,ET DNS Query for .local TLD,medium
+2026-02-10 10:33:04,10.0.0.217,10.0.0.196,ET POLICY Windows executable download,low
+2026-02-10 10:33:06,10.0.0.45,10.0.0.48,ET DNS Query for .local TLD,high
+2026-02-10 10:33:10,10.0.0.81,10.0.0.182,ET INFO TLS Certificate Observed,low
+2026-02-10 10:33:18,10.0.0.247,10.0.0.234,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:33:19,10.0.0.20,10.0.0.82,ET POLICY Windows executable download,low
+2026-02-10 10:33:20,10.0.0.113,10.0.0.133,ET POLICY Windows executable download,medium
+2026-02-10 10:33:41,10.0.0.244,10.0.0.193,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:33:58,10.0.0.92,10.0.0.242,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:34:10,10.0.0.101,10.0.0.38,ET INFO Observed DNS Query,medium
+2026-02-10 10:34:11,10.0.0.191,10.0.0.177,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:34:13,10.0.0.158,10.0.0.105,ET INFO Observed DNS Query,low
+2026-02-10 10:34:17,198.51.100.62,10.0.0.214,ET INFO Observed DNS Query,low
+2026-02-10 10:34:24,10.0.0.216,10.0.0.24,ET SCAN Potential Recon Activity,low
+2026-02-10 10:34:33,203.0.113.1,10.0.0.161,ET INFO Observed DNS Query,medium
+2026-02-10 10:34:52,10.0.0.80,10.0.0.174,ET POLICY Windows executable download,low
+2026-02-10 10:34:57,10.0.0.92,10.0.0.189,ET SCAN Potential Recon Activity,low
+2026-02-10 10:34:58,10.0.0.147,10.0.0.214,ET INFO Observed DNS Query,medium
+2026-02-10 10:34:58,10.0.0.191,10.0.0.27,ET DNS Query for .local TLD,high
+2026-02-10 10:35:08,10.0.0.139,10.0.0.164,ET POLICY Windows executable download,low
+2026-02-10 10:35:09,10.0.0.187,10.0.0.49,ET INFO Observed DNS Query,high
+2026-02-10 10:35:15,10.0.0.67,10.0.0.189,ET DNS Query for .local TLD,high
+2026-02-10 10:35:22,10.0.0.149,10.0.0.156,ET SCAN Potential Recon Activity,high
+2026-02-10 10:35:29,10.0.0.219,10.0.0.224,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:35:32,10.0.0.247,10.0.0.241,ET POLICY Windows executable download,low
+2026-02-10 10:35:39,10.0.0.145,10.0.0.81,ET POLICY Windows executable download,low
+2026-02-10 10:35:49,10.0.0.74,10.0.0.241,ET SCAN Potential Recon Activity,low
+2026-02-10 10:35:52,10.0.0.207,10.0.0.131,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:35:56,10.0.0.242,10.0.0.183,ET POLICY Windows executable download,medium
+2026-02-10 10:36:01,10.0.0.61,10.0.0.157,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:36:02,198.51.100.132,10.0.0.68,ET POLICY External IP Check,medium
+2026-02-10 10:36:06,10.0.0.138,10.0.0.10,ET POLICY Windows executable download,medium
+2026-02-10 10:36:06,198.51.100.24,10.0.0.193,ET POLICY External IP Check,medium
+2026-02-10 10:36:10,10.0.0.96,10.0.0.13,ET INFO Observed DNS Query,medium
+2026-02-10 10:36:32,192.0.2.217,10.0.0.57,ET INFO Observed DNS Query,medium
+2026-02-10 10:36:37,198.51.100.107,10.0.0.158,ET SCAN Potential Recon Activity,low
+2026-02-10 10:36:46,10.0.0.68,10.0.0.213,ET INFO Observed DNS Query,medium
+2026-02-10 10:37:01,192.0.2.20,10.0.0.141,ET DNS Query for .local TLD,low
+2026-02-10 10:37:05,10.0.0.197,10.0.0.104,ET DNS Query for .local TLD,low
+2026-02-10 10:37:07,10.0.0.192,10.0.0.207,ET POLICY External IP Check,low
+2026-02-10 10:37:12,192.0.2.115,10.0.0.37,ET POLICY Windows executable download,low
+2026-02-10 10:37:13,10.0.0.159,10.0.0.162,ET POLICY Windows executable download,medium
+2026-02-10 10:37:19,10.0.0.140,10.0.0.32,ET INFO Observed DNS Query,medium
+2026-02-10 10:37:26,198.51.100.61,10.0.0.76,ET INFO TLS Certificate Observed,low
+2026-02-10 10:37:29,10.0.0.154,10.0.0.77,ET DNS Query for .local TLD,low
+2026-02-10 10:37:37,10.0.0.28,10.0.0.154,ET DNS Query for .local TLD,high
+2026-02-10 10:37:54,198.51.100.59,10.0.0.90,ET POLICY Windows executable download,low
+2026-02-10 10:37:54,10.0.0.43,10.0.0.149,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:38:05,10.0.0.144,10.0.0.86,ET INFO Observed DNS Query,high
+2026-02-10 10:38:06,10.0.0.149,10.0.0.191,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:38:11,10.0.0.124,10.0.0.110,ET DNS Query for .local TLD,low
+2026-02-10 10:38:12,198.51.100.5,10.0.0.116,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:38:51,10.0.0.207,10.0.0.142,ET POLICY External IP Check,low
+2026-02-10 10:38:53,198.51.100.157,10.0.0.176,ET INFO TLS Certificate Observed,low
+2026-02-10 10:38:58,10.0.0.219,10.0.0.198,ET INFO TLS Certificate Observed,low
+2026-02-10 10:38:59,10.0.0.165,10.0.0.48,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:39:06,10.0.0.74,10.0.0.223,ET INFO Observed DNS Query,medium
+2026-02-10 10:39:08,10.0.0.209,10.0.0.117,ET DNS Query for .local TLD,low
+2026-02-10 10:39:10,192.0.2.80,10.0.0.29,ET INFO Observed DNS Query,medium
+2026-02-10 10:39:15,203.0.113.167,10.0.0.221,ET INFO TLS Certificate Observed,low
+2026-02-10 10:39:15,10.0.0.210,10.0.0.42,ET POLICY Windows executable download,medium
+2026-02-10 10:39:30,10.0.0.202,10.0.0.117,ET DNS Query for .local TLD,medium
+2026-02-10 10:39:34,10.0.0.70,10.0.0.36,ET DNS Query for .local TLD,low
+2026-02-10 10:39:36,192.0.2.151,10.0.0.174,ET POLICY Windows executable download,medium
+2026-02-10 10:39:38,10.0.0.41,10.0.0.16,ET SCAN Potential Recon Activity,low
+2026-02-10 10:39:55,10.0.0.43,10.0.0.250,ET DNS Query for .local TLD,medium
+2026-02-10 10:39:56,10.0.0.64,10.0.0.165,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:39:58,198.51.100.171,10.0.0.192,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:40:12,10.0.0.99,10.0.0.226,ET INFO Observed DNS Query,high
+2026-02-10 10:40:26,10.0.0.104,10.0.0.157,ET INFO TLS Certificate Observed,low
+2026-02-10 10:40:34,10.0.0.203,10.0.0.247,ET POLICY Windows executable download,low
+2026-02-10 10:40:38,203.0.113.114,10.0.0.104,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:40:42,203.0.113.55,10.0.0.238,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:40:45,10.0.0.43,10.0.0.84,ET POLICY Windows executable download,medium
+2026-02-10 10:40:49,198.51.100.107,10.0.0.96,ET INFO TLS Certificate Observed,high
+2026-02-10 10:40:50,203.0.113.202,10.0.0.2,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:40:52,10.0.0.190,10.0.0.106,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:41:03,198.51.100.9,10.0.0.141,ET POLICY External IP Check,medium
+2026-02-10 10:41:04,198.51.100.216,10.0.0.72,ET INFO Observed DNS Query,high
+2026-02-10 10:41:15,203.0.113.194,10.0.0.106,ET DNS Query for .local TLD,medium
+2026-02-10 10:41:25,10.0.0.231,10.0.0.225,ET INFO Observed DNS Query,medium
+2026-02-10 10:41:31,10.0.0.118,10.0.0.164,ET DNS Query for .local TLD,medium
+2026-02-10 10:41:31,10.0.0.14,10.0.0.114,ET POLICY Windows executable download,low
+2026-02-10 10:41:32,10.0.0.163,10.0.0.147,ET DNS Query for .local TLD,high
+2026-02-10 10:41:48,192.0.2.211,10.0.0.165,ET INFO Observed DNS Query,low
+2026-02-10 10:42:12,10.0.0.171,10.0.0.42,ET POLICY Windows executable download,medium
+2026-02-10 10:42:17,10.0.0.253,10.0.0.239,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:42:21,10.0.0.208,10.0.0.111,ET DNS Query for .local TLD,low
+2026-02-10 10:42:30,10.0.0.134,10.0.0.22,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:42:41,203.0.113.8,10.0.0.215,ET INFO Observed DNS Query,medium
+2026-02-10 10:42:52,10.0.0.199,10.0.0.109,ET POLICY Windows executable download,low
+2026-02-10 10:42:52,10.0.0.198,10.0.0.134,ET INFO TLS Certificate Observed,low
+2026-02-10 10:42:53,10.0.0.152,10.0.0.50,ET POLICY External IP Check,low
+2026-02-10 10:43:00,10.0.0.156,10.0.0.123,ET INFO TLS Certificate Observed,low
+2026-02-10 10:43:01,10.0.0.55,10.0.0.31,ET POLICY Windows executable download,medium
+2026-02-10 10:43:03,10.0.0.197,10.0.0.187,ET DNS Query for .local TLD,low
+2026-02-10 10:43:23,10.0.0.186,10.0.0.186,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:43:26,192.0.2.227,10.0.0.186,ET DNS Query for .local TLD,medium
+2026-02-10 10:43:29,198.51.100.112,10.0.0.247,ET DNS Query for .local TLD,medium
+2026-02-10 10:43:33,10.0.0.250,10.0.0.86,ET POLICY External IP Check,medium
+2026-02-10 10:43:34,192.0.2.166,10.0.0.127,ET POLICY External IP Check,low
+2026-02-10 10:43:40,10.0.0.23,10.0.0.133,ET INFO Observed DNS Query,low
+2026-02-10 10:43:45,192.0.2.60,10.0.0.177,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:43:56,192.0.2.43,10.0.0.186,ET INFO Observed DNS Query,medium
+2026-02-10 10:44:03,10.0.0.210,10.0.0.152,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:44:03,10.0.0.127,10.0.0.20,ET INFO Observed DNS Query,medium
+2026-02-10 10:44:04,10.0.0.26,10.0.0.188,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:44:08,203.0.113.191,10.0.0.239,ET INFO Observed DNS Query,low
+2026-02-10 10:44:11,10.0.0.178,10.0.0.70,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:44:20,10.0.0.236,10.0.0.190,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:44:40,203.0.113.246,10.0.0.144,ET POLICY External IP Check,low
+2026-02-10 10:44:45,10.0.0.238,10.0.0.29,ET INFO TLS Certificate Observed,high
+2026-02-10 10:44:47,10.0.0.68,10.0.0.219,ET POLICY External IP Check,medium
+2026-02-10 10:44:50,198.51.100.199,10.0.0.248,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:44:53,10.0.0.14,10.0.0.104,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:44:56,10.0.0.134,10.0.0.148,ET INFO Observed DNS Query,high
+2026-02-10 10:45:19,203.0.113.31,10.0.0.127,ET POLICY Windows executable download,medium
+2026-02-10 10:45:24,10.0.0.243,10.0.0.39,ET POLICY External IP Check,high
+2026-02-10 10:45:30,10.0.0.183,10.0.0.218,ET POLICY External IP Check,medium
+2026-02-10 10:45:43,10.0.0.10,10.0.0.230,ET POLICY Windows executable download,high
+2026-02-10 10:45:45,203.0.113.92,10.0.0.21,ET POLICY External IP Check,medium
+2026-02-10 10:45:46,10.0.0.61,10.0.0.166,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:45:54,203.0.113.155,10.0.0.216,ET POLICY Windows executable download,medium
+2026-02-10 10:45:55,10.0.0.112,10.0.0.18,ET DNS Query for .local TLD,medium
+2026-02-10 10:46:00,10.0.0.89,10.0.0.188,ET INFO TLS Certificate Observed,high
+2026-02-10 10:46:11,10.0.0.41,10.0.0.253,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:46:12,198.51.100.55,10.0.0.189,ET DNS Query for .local TLD,medium
+2026-02-10 10:46:16,10.0.0.11,10.0.0.113,ET DNS Query for .local TLD,medium
+2026-02-10 10:46:20,192.0.2.197,10.0.0.236,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:46:20,192.0.2.234,10.0.0.218,ET DNS Query for .local TLD,low
+2026-02-10 10:46:21,203.0.113.174,10.0.0.247,ET POLICY Windows executable download,low
+2026-02-10 10:46:24,192.0.2.119,10.0.0.65,ET SCAN Potential Recon Activity,high
+2026-02-10 10:46:32,203.0.113.238,10.0.0.210,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:46:32,10.0.0.2,10.0.0.220,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:46:38,10.0.0.144,10.0.0.232,ET SCAN Potential Recon Activity,low
+2026-02-10 10:46:53,10.0.0.132,10.0.0.163,ET POLICY Windows executable download,medium
+2026-02-10 10:47:02,10.0.0.105,10.0.0.183,ET POLICY Windows executable download,medium
+2026-02-10 10:47:06,10.0.0.61,10.0.0.99,ET SCAN Potential Recon Activity,low
+2026-02-10 10:47:15,203.0.113.43,10.0.0.218,ET INFO Observed DNS Query,medium
+2026-02-10 10:47:17,203.0.113.46,10.0.0.188,ET POLICY External IP Check,medium
+2026-02-10 10:47:24,10.0.0.57,10.0.0.247,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:47:26,10.0.0.41,10.0.0.116,ET POLICY Windows executable download,medium
+2026-02-10 10:47:50,10.0.0.58,10.0.0.98,ET INFO Observed DNS Query,low
+2026-02-10 10:47:57,10.0.0.122,10.0.0.210,ET POLICY Windows executable download,medium
+2026-02-10 10:48:10,10.0.0.227,10.0.0.205,ET INFO TLS Certificate Observed,low
+2026-02-10 10:48:10,10.0.0.25,10.0.0.32,ET INFO Observed DNS Query,low
+2026-02-10 10:48:12,10.0.0.230,10.0.0.155,ET POLICY Windows executable download,low
+2026-02-10 10:48:29,10.0.0.83,10.0.0.183,ET SCAN Potential Recon Activity,low
+2026-02-10 10:48:31,10.0.0.181,10.0.0.136,ET POLICY Windows executable download,high
+2026-02-10 10:48:36,10.0.0.174,10.0.0.181,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:48:44,198.51.100.41,10.0.0.229,ET POLICY External IP Check,low
+2026-02-10 10:48:46,10.0.0.77,10.0.0.91,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:48:47,10.0.0.79,10.0.0.184,ET POLICY Windows executable download,low
+2026-02-10 10:49:07,10.0.0.54,10.0.0.184,ET INFO Observed DNS Query,low
+2026-02-10 10:49:09,10.0.0.209,10.0.0.128,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:49:10,10.0.0.206,10.0.0.183,ET POLICY External IP Check,high
+2026-02-10 10:49:12,10.0.0.104,10.0.0.140,ET POLICY Windows executable download,low
+2026-02-10 10:49:13,10.0.0.125,10.0.0.94,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:49:44,10.0.0.149,10.0.0.60,ET POLICY External IP Check,medium
+2026-02-10 10:49:53,10.0.0.165,10.0.0.152,ET INFO TLS Certificate Observed,low
+2026-02-10 10:49:55,10.0.0.92,10.0.0.156,ET POLICY Windows executable download,medium
+2026-02-10 10:50:13,192.0.2.220,10.0.0.84,ET INFO Observed DNS Query,low
+2026-02-10 10:50:16,10.0.0.103,10.0.0.184,ET POLICY Windows executable download,high
+2026-02-10 10:50:29,10.0.0.84,10.0.0.167,ET POLICY Windows executable download,low
+2026-02-10 10:50:33,192.0.2.200,10.0.0.152,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:50:35,10.0.0.229,10.0.0.112,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:50:40,10.0.0.65,10.0.0.95,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:50:42,10.0.0.187,10.0.0.3,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:50:43,203.0.113.66,10.0.0.18,ET INFO Observed DNS Query,low
+2026-02-10 10:50:54,10.0.0.252,10.0.0.137,ET POLICY External IP Check,low
+2026-02-10 10:51:08,198.51.100.208,10.0.0.17,ET POLICY Windows executable download,low
+2026-02-10 10:51:14,10.0.0.133,10.0.0.203,ET INFO Observed DNS Query,medium
+2026-02-10 10:51:16,203.0.113.6,10.0.0.60,ET INFO Observed DNS Query,low
+2026-02-10 10:51:24,10.0.0.89,10.0.0.18,ET DNS Query for .local TLD,high
+2026-02-10 10:51:44,10.0.0.12,10.0.0.91,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:51:47,198.51.100.60,10.0.0.251,ET POLICY External IP Check,low
+2026-02-10 10:51:50,203.0.113.127,10.0.0.204,ET INFO TLS Certificate Observed,low
+2026-02-10 10:51:56,10.0.0.11,10.0.0.164,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:52:02,192.0.2.211,10.0.0.241,ET POLICY Windows executable download,low
+2026-02-10 10:52:03,198.51.100.5,10.0.0.115,ET INFO Observed DNS Query,high
+2026-02-10 10:52:07,203.0.113.247,10.0.0.36,ET POLICY External IP Check,medium
+2026-02-10 10:52:22,10.0.0.182,10.0.0.204,ET INFO TLS Certificate Observed,high
+2026-02-10 10:52:31,10.0.0.217,10.0.0.154,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:52:38,10.0.0.122,10.0.0.70,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:52:38,10.0.0.151,10.0.0.127,ET DNS Query for .local TLD,low
+2026-02-10 10:52:51,10.0.0.29,10.0.0.191,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:53:02,198.51.100.175,10.0.0.217,ET POLICY External IP Check,high
+2026-02-10 10:53:13,198.51.100.90,10.0.0.15,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:53:16,198.51.100.226,10.0.0.12,ET DNS Query for .local TLD,high
+2026-02-10 10:53:23,10.0.0.230,10.0.0.49,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:53:24,198.51.100.180,10.0.0.244,ET POLICY External IP Check,medium
+2026-02-10 10:53:28,10.0.0.122,10.0.0.101,ET POLICY Windows executable download,low
+2026-02-10 10:53:32,10.0.0.40,10.0.0.171,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:53:36,10.0.0.107,10.0.0.240,ET SCAN Potential Recon Activity,low
+2026-02-10 10:53:56,10.0.0.52,10.0.0.37,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:54:04,10.0.0.90,10.0.0.104,ET INFO TLS Certificate Observed,high
+2026-02-10 10:54:04,203.0.113.228,10.0.0.167,ET DNS Query for .local TLD,low
+2026-02-10 10:54:09,10.0.0.151,10.0.0.72,ET INFO Observed DNS Query,medium
+2026-02-10 10:54:09,192.0.2.13,10.0.0.200,ET INFO TLS Certificate Observed,low
+2026-02-10 10:54:16,10.0.0.207,10.0.0.248,ET POLICY External IP Check,low
+2026-02-10 10:54:27,10.0.0.55,10.0.0.210,ET INFO Observed DNS Query,medium
+2026-02-10 10:54:37,10.0.0.236,10.0.0.221,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:54:38,10.0.0.30,10.0.0.223,ET POLICY Windows executable download,low
+2026-02-10 10:54:39,10.0.0.229,10.0.0.32,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:54:59,10.0.0.177,10.0.0.154,ET INFO TLS Certificate Observed,high
+2026-02-10 10:55:05,10.0.0.49,10.0.0.110,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:55:12,10.0.0.55,10.0.0.87,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:55:16,10.0.0.235,10.0.0.164,ET POLICY External IP Check,medium
+2026-02-10 10:55:18,10.0.0.251,10.0.0.166,ET POLICY External IP Check,medium
+2026-02-10 10:55:27,10.0.0.248,10.0.0.95,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:55:30,10.0.0.174,10.0.0.11,ET POLICY External IP Check,low
+2026-02-10 10:55:32,10.0.0.237,10.0.0.17,ET INFO Observed DNS Query,low
+2026-02-10 10:55:48,10.0.0.213,10.0.0.108,ET POLICY Windows executable download,low
+2026-02-10 10:56:02,198.51.100.8,10.0.0.86,ET INFO Observed DNS Query,medium
+2026-02-10 10:56:04,10.0.0.15,10.0.0.164,ET DNS Query for .local TLD,low
+2026-02-10 10:56:11,10.0.0.60,10.0.0.104,ET POLICY Windows executable download,medium
+2026-02-10 10:56:13,10.0.0.114,10.0.0.248,ET SCAN Potential Recon Activity,low
+2026-02-10 10:56:15,198.51.100.133,10.0.0.177,ET DNS Query for .local TLD,high
+2026-02-10 10:56:21,10.0.0.89,10.0.0.223,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:56:31,10.0.0.154,10.0.0.131,ET DNS Query for .local TLD,medium
+2026-02-10 10:56:35,10.0.0.45,10.0.0.42,ET SCAN Potential Recon Activity,high
+2026-02-10 10:56:54,198.51.100.157,10.0.0.98,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:56:58,10.0.0.188,10.0.0.200,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:57:19,203.0.113.92,10.0.0.247,ET INFO TLS Certificate Observed,low
+2026-02-10 10:57:21,10.0.0.193,10.0.0.32,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:57:25,203.0.113.31,10.0.0.186,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:57:27,10.0.0.219,10.0.0.69,ET SCAN Potential Recon Activity,low
+2026-02-10 10:57:35,10.0.0.232,10.0.0.13,ET POLICY Windows executable download,medium
+2026-02-10 10:57:50,203.0.113.134,10.0.0.36,ET INFO TLS Certificate Observed,low
+2026-02-10 10:57:51,10.0.0.56,10.0.0.48,ET POLICY External IP Check,low
+2026-02-10 10:57:59,10.0.0.117,10.0.0.252,ET INFO TLS Certificate Observed,low
+2026-02-10 10:58:15,10.0.0.90,10.0.0.15,ET WEB_CLIENT Suspicious User-Agent,high
+2026-02-10 10:58:18,203.0.113.156,10.0.0.63,ET POLICY External IP Check,low
+2026-02-10 10:58:22,10.0.0.238,10.0.0.30,ET WEB_CLIENT Suspicious User-Agent,medium
+2026-02-10 10:58:28,192.0.2.203,10.0.0.84,ET POLICY Windows executable download,high
+2026-02-10 10:58:30,10.0.0.91,10.0.0.63,ET SCAN Potential Recon Activity,low
+2026-02-10 10:58:37,10.0.0.85,10.0.0.28,ET POLICY Windows executable download,medium
+2026-02-10 10:58:38,10.0.0.80,10.0.0.169,ET POLICY External IP Check,medium
+2026-02-10 10:58:45,203.0.113.81,10.0.0.35,ET POLICY Windows executable download,medium
+2026-02-10 10:58:45,10.0.0.231,10.0.0.224,ET POLICY Windows executable download,low
+2026-02-10 10:58:46,10.0.0.21,10.0.0.8,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:58:52,10.0.0.32,10.0.0.201,ET INFO TLS Certificate Observed,medium
+2026-02-10 10:58:58,10.0.0.207,10.0.0.201,ET INFO Observed DNS Query,medium
+2026-02-10 10:59:02,198.51.100.8,10.0.0.148,ET SCAN Potential Recon Activity,low
+2026-02-10 10:59:08,10.0.0.201,10.0.0.92,ET WEB_CLIENT Suspicious User-Agent,low
+2026-02-10 10:59:27,10.0.0.218,10.0.0.3,ET SCAN Potential Recon Activity,low
+2026-02-10 10:59:46,198.51.100.199,10.0.0.221,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:59:46,10.0.0.197,10.0.0.28,ET SCAN Potential Recon Activity,medium
+2026-02-10 10:59:47,10.0.0.90,10.0.0.106,ET INFO TLS Certificate Observed,high
+2026-02-10 10:59:48,10.0.0.252,10.0.0.241,ET POLICY Windows executable download,low
+2026-02-10 10:59:58,192.0.2.204,10.0.0.225,ET INFO Observed DNS Query,medium

@@ -1,0 +1,156 @@
+#Defines detection thresholds for core anomaly rules
+thresholds:
+  repeated_denies_count: 15
+  port_scan_unique_ports: 3
+
+#Time window settings used across different detection algorithms
+windows:
+  brute_force_minutes: 5
+  spike_minutes: 1
+  portscan_minutes: 1
+  lateral_minutes: 5
+
+#Standardised schema used after parsing logs from different sources
+schema:
+  - timestamp
+  - src_ip
+  - dst_ip
+  - dst_port
+  - action
+  - username
+  - signature
+  - severity
+  - dns_query
+
+#Allowlists used to filter out trusted or known-safe activity before analysis
+allowlists:
+  src_ips: ["10.0.0.50"]
+  dst_ports: []
+
+#Detection rules configuration for all supported log types
+rules:
+
+  #Firewall port scan detection settings
+  port_scan:
+    action_filter: deny
+
+  #Traffic spike detection configuration
+  spike:
+    method: median_multiplier
+    multiplier: 3
+    fixed_threshold: 100
+
+  #Internal lateral movement detection thresholds
+  lateral_movement:
+    unique_internal_dsts: 3
+    action_filter: deny
+
+  #Authentication failed login detection
+  auth_failed_logins:
+    window_minutes: 5
+    threshold: 10
+    group_by: src_ip
+
+  #Detection of successful login after multiple failures (possible compromise)
+  auth_success_after_failures:
+    window_minutes: 5
+    fail_threshold: 10
+    group_by: src_ip
+
+  #IDS alert burst detection
+  ids_burst:
+    window_minutes: 5
+    threshold: 2
+    severity_filter: ["medium", "high", "critical"]
+
+  #Outbound data exfiltration detection
+  exfiltration_outbound:
+    window_minutes: 5
+    unique_external_dsts_threshold: 10
+    event_count_threshold: 50
+    action_filter: allow
+
+  #DNS anomaly detection (domain spikes)
+  dns_domain_spike:
+    window_minutes: 5
+    unique_domains_threshold: 4
+    total_queries_threshold: 10
+
+  #Privileged account activity detection
+  auth_privileged_activity:
+    window_minutes: 10
+    external_only: true
+    baseline_successes: 3
+    privileged_usernames: ["admin", "administrator", "root", "dbadmin", "kubeadmin"]
+    privileged_patterns: []
+
+  #Authentication-based lateral movement detection
+  auth_lateral_movement:
+    window_minutes: 10
+    unique_hosts_threshold: 12
+
+  #DNS beaconing detection (periodic communication patterns)
+  dns_beaconing:
+    window_minutes: 15
+    min_events: 4
+    max_interval_stddev_seconds: 10.0
+    min_mean_interval_seconds: 5.0
+    max_mean_interval_seconds: 3600.0
+
+#Controls size of summary outputs (e.g. top sources)
+summaries:
+  top_n: 5
+
+#Defines how each log source is parsed and mapped into the common schema
+sources:
+
+  firewall:
+    event_type: firewall
+    strict: false
+    fields:
+      timestamp: timestamp
+      src_ip: src_ip
+      dst_ip: dst_ip
+      dst_port: dst_port
+      action: action
+
+  auth:
+    event_type: auth
+    strict: false
+    fields:
+      timestamp: time
+      src_ip: client_ip
+      action: result
+      username: user
+      dst_ip: server
+
+  ids:
+    event_type: ids
+    strict: false
+    fields:
+      timestamp: ts
+      src_ip: src
+      dst_ip: dest
+      signature: sig
+      severity: sev
+
+  #DNS log mapping into unified schema
+  dns:
+    event_type: dns
+    strict: false
+    fields:
+      timestamp: timestamp
+      src_ip: src_ip
+      dns_query: query
+      action: rcode
+
+#Defines which input files are loaded and which parser configuration to use
+inputs:
+  - path: data/firewall.csv
+    source: firewall
+  - path: data/auth.csv
+    source: auth
+  - path: data/ids.csv
+    source: ids
+  - path: data/dns.csv
+    source: dns

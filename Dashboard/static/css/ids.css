@@ -1,0 +1,10 @@
+/* IDS activity chart */
+#ids-activity-chart {
+  display: block;
+}
+
+/* Ensure IDS logs wrap properly */
+#ids-alerts-body td:nth-child(3),
+#ids-table-body td {
+  word-break: break-word;
+}
