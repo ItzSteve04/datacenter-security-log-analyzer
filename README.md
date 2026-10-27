@@ -410,3 +410,16 @@ This application was developed independently as my Final Year Project at the Uni
 **Year:** 2026
 
 The project combines cybersecurity research with practical Python development, simulated security monitoring, detection engineering, data analysis, and visualisation.
+
+
+## Project Documentation
+
+- [Read the Final Year Project Report](docs/Final-Report.pdf)
+- [View the Final Presentation Slides](docs/Final-Presentation-Slides.pdf)
+
+The report contains the academic background, system design,
+implementation methodology, testing, results and evaluation.
+
+The presentation provides a shorter overview of the project,
+including its architecture, detection methods and dashboard.
+
